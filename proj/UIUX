@@ -1,0 +1,84 @@
+---
+platform: "desktop"
+framework: "Slint"
+target_users: "Researchers, linguists, voice engineers"
+---
+
+# UI/UX Guidelines for PiperWorkbench
+
+## Design Philosophy
+
+Professional audio workbench with clear affordance for voice processing, analysis, and synthesis. Familiarity with DAW (Digital Audio Workstation) conventions where applicable.
+
+## Layout
+
+### Main Window Structure
+```
+┌─────────────────────────────────────────┐
+│ File Edit View Help                  [_][=][×] │
+├──────────────────────────────────────────┤
+│ [Play] [Stop] [Record] | ▶ ◼ □ [Speaker] │
+├──────────────────────────────────────────┤
+│      │                   │                 │
+│ Proj │   Waveform View   │   Parameters    │
+│ Files│   (center focus)  │   & Controls    │
+│      │                   │                 │
+│      │   Spectrum (zoom) │   Presets       │
+├──────────────────────────────────────────┤
+│ Status: Ready | Sample Rate: 22050Hz | Duration: 0:00 │
+└──────────────────────────────────────────┘
+```
+
+## Color Scheme
+
+- **Background**: Dark theme (reduces eye strain for long sessions)
+- **Waveform**: Bright accent (cyan/blue) on dark background
+- **Spectrum**: Heat map (blue → green → red)
+- **Controls**: Subtle grays with highlights on interaction
+
+## Interaction Patterns
+
+### Playback
+- Play/Stop buttons (big, obvious)
+- Scrubber bar for timeline navigation
+- Speed/pitch indicators
+- Loop region selection (drag on waveform)
+
+### Voice Parameters
+- **TTS Controls**: Voice selection, pitch range, speed
+- **EQ**: 3-band or parametric (depends on phase)
+- **Filters**: Low/high-pass, resonance
+- **Synth**: Oscillator waveform, envelope (ADSR)
+- **Modulation**: LFO depth/rate, tremolo, vibrato
+
+### Analysis
+- Waveform viewer (zoom/pan)
+- Spectrum analyzer (FFT display, frequency axis)
+- Phoneme timeline (when implemented)
+
+## Accessibility
+
+- High contrast mode option
+- Keyboard shortcuts for all major functions
+- Tooltips on hover (control descriptions)
+- Consistent icon set (Material Design or similar)
+
+## Responsive Design
+
+- Resizable panels (drag dividers)
+- Remember window size/position on close
+- Adaptable to small (1280x720) and large (4K) displays
+- Touch-friendly button sizes (minimum 44x44px for touch targets)
+
+## State & Persistence
+
+- Auto-save current project state
+- Recent projects menu
+- Undo/redo history (UI actions + audio processing)
+- Preference panels (theme, audio device, paths)
+
+## Prototype Milestones
+
+1. **Alpha** (Phase 1-2): Functional layout, waveform display, basic controls
+2. **Beta** (Phase 3-4): All audio tools integrated, professional appearance
+3. **Release** (Phase 5): Polish, accessibility audit, user testing feedback incorporated

@@ -1,0 +1,35 @@
+/// Sizes global — fixed layout dimensions and spacing tokens
+///
+/// All hardcoded pixel values and percentages live here.
+/// Components reference these properties instead of literal values.
+export global Sizes {
+    /// Zero length — used for borders, hairlines
+    out property <length> zero: 0px;
+
+    /// Main window minimum width
+    out property <length> window-width: 1200px;
+
+    /// Main window minimum height
+    out property <length> window-height: 800px;
+
+    /// Menu bar height
+    out property <length> menu-height: 30px;
+
+    /// Toolbar height (play/stop controls)
+    out property <length> toolbar-height: 50px;
+
+    /// Status bar height
+    out property <length> status-bar-height: 25px;
+
+    /// Left panel (project browser) width
+    out property <length> sidebar-width: 200px;
+
+    /// Right panel (parameters) width
+    out property <length> params-width: 250px;
+
+    /// Spectrum analyzer height within waveform view
+    out property <length> spectrum-height: 100px;
+
+    /// Full width (100%)
+    out property <length> full: 100%;
+}

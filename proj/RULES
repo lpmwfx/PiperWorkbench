@@ -1,0 +1,49 @@
+---
+active_rules:
+  global:
+    - startup.md
+    - initialize.md
+    - quick-ref.md
+    - graph-position-paradigm.md
+    - read-before-write.md
+    - know-before-change.md
+    - file-limits.md
+    - topology.md
+    - mother-tree.md
+    - language.md
+    - nesting.md
+    - data-driven-ui.md
+    - error-flow.md
+
+  rust:
+    - quick-ref.md
+    - ownership.md
+    - modules.md
+    - testing.md
+    - error-handling.md
+    - safety.md
+    - docs.md
+    - naming.md
+    - types.md
+    - verification.md
+
+  slint:
+    - quick-ref.md
+    - component-model.md
+    - rust-bridge.md
+    - responsive-layout.md
+    - mother-child.md
+    - docs.md
+    - globals.md
+    - states.md
+    - themes.md
+
+conventions:
+  - Code review: mandatory before merge to main
+  - Testing: unit tests for core audio logic, integration tests for pipeline
+  - Documentation: `///` doc comments for all pub items (Rust/Slint), enforced by scanner
+  - Commits: semantic messages with scope (e.g., "feat(audio): add equalizer", "fix(ui): layout issue")
+  - Branches: feature/ bugfix/ refactor/ naming
+  - File limits: Rust max 300 lines, Slint max 200 lines
+  - Layer tags: all types must carry layer suffix (_ui, _adp, _core, _pal, _gtw, _x)
+  - English only: all code, comments, identifiers in English

@@ -1,0 +1,10 @@
+[project]
+name = "PiperWorkbench"
+languages = ["rust", "slint"]
+platforms = ["desktop"]
+
+[scanner]
+enabled = true
+
+[publish]
+# To be configured when ready for release

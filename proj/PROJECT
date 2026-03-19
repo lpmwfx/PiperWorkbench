@@ -1,0 +1,45 @@
+---
+name: PiperWorkbench
+description: Piper linguistic development workbench for TTS voice modeling and processing
+type: tool
+visibility: public
+---
+
+# PiperWorkbench
+
+A professional linguistic development workbench for Piper TTS (text-to-speech) that enables high-quality voice control through modulation, equalization, synthesis, and filtering.
+
+## Purpose
+
+Enable researchers and engineers to develop, test, and optimize Piper language models and voice characteristics through an integrated GUI environment combining voice processing, spectral analysis, and synthesis capabilities.
+
+## Stack
+
+- **Primary**: Rust + Slint (GUI framework)
+- **Integration**: C++ (audio processing), Python (ML/analysis), JavaScript (scripting)
+- **Audio**: TTS engine, equalizer, synth filters, modulation tools
+
+## Current
+
+- phase: "1"
+- status: "init"
+- started: 2026-03-19
+
+## Phases
+
+1. **Setup & Architecture** — project scaffold, audio pipeline foundation, basic UI layout
+2. **Core Workbench** — TTS integration, basic voice controls, waveform visualization
+3. **Audio Processing** — equalizer, filters, synth integration
+4. **Modulation & Advanced** — voice modulation, analysis tools, preset system
+5. **Polish & Optimization** — performance, user experience, documentation
+
+## Team
+
+- Lead: mathi
+
+## Dependencies
+
+- Rust toolchain
+- Slint UI framework
+- Piper TTS engine (to integrate)
+- Audio libraries (e.g., cpal, rubato, spectrum analyzer)

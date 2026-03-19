@@ -1,0 +1,40 @@
+---
+phase: "1"
+status: "setup"
+---
+
+## Phase 1: Setup & Architecture
+
+### Foundation
+- [ ] Initialize Cargo workspace with main app crate
+- [ ] Set up Slint UI skeleton (main window, basic layout)
+- [ ] Define audio pipeline module structure
+- [ ] Create build.rs for build-time configuration
+- [ ] Set up test framework (unit + integration)
+
+### Audio Pipeline
+- [ ] Design audio sample flow (input → processing → output)
+- [ ] Create audio trait system (filters, processors, effects)
+- [ ] Integrate Piper TTS engine (stub initially)
+- [ ] Set up FFT/spectrum analysis module
+- [ ] Create basic audio buffer management
+
+### UI Scaffold
+- [ ] Main workbench window layout
+- [ ] Menu bar (File, Edit, View, Help)
+- [ ] Toolbar with play/stop/record controls
+- [ ] Left panel: project/file browser
+- [ ] Center panel: waveform viewer placeholder
+- [ ] Right panel: parameters/controls placeholder
+- [ ] Status bar with sample rate, duration info
+
+### DevOps
+- [ ] Git hooks (pre-commit, pre-push)
+- [ ] CI configuration (if applicable)
+- [ ] Build documentation
+- [ ] Dependency pinning (Cargo.lock strategy)
+
+### Documentation
+- [ ] README with quick start
+- [ ] Architecture diagram (audio flow)
+- [ ] Development setup guide

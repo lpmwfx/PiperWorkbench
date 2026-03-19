@@ -1,0 +1,35 @@
+---
+current: "1"
+---
+
+# Project Phases
+
+## Phase 1: Setup & Architecture
+**Goal**: Foundation and structure
+**Duration**: ~2-3 weeks
+**Deliverable**: Functional skeleton (Cargo project, basic Slint window, audio module stubs)
+**Success**: Can compile, run, and see empty workbench UI
+
+## Phase 2: Core Workbench
+**Goal**: TTS integration and voice playback
+**Duration**: ~3-4 weeks
+**Deliverable**: Play/stop controls, waveform visualization, basic voice selection
+**Success**: Can load TTS voice and play test audio
+
+## Phase 3: Audio Processing
+**Goal**: Equalizer, filters, synth integration
+**Duration**: ~4-5 weeks
+**Deliverable**: Working EQ, filter controls, basic synth voice options
+**Success**: Can modify voice characteristics in real-time
+
+## Phase 4: Modulation & Advanced
+**Goal**: Voice modulation, analysis, preset system
+**Duration**: ~3-4 weeks
+**Deliverable**: Modulation effects, frequency analyzer, preset save/load
+**Success**: Professional-grade voice manipulation capabilities
+
+## Phase 5: Polish & Optimization
+**Goal**: Performance, UX, documentation
+**Duration**: ~2-3 weeks
+**Deliverable**: Optimized code, complete docs, release-ready
+**Success**: Production-ready application

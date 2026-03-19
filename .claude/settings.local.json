@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__mcp-proxy__rules__get_rule",
+      "mcp__mcp-proxy__rulestools__setup",
+      "mcp__mcp-proxy__rules__get_context",
+      "mcp__mcp-proxy__rules__list_rules",
+      "mcp__mcp-proxy__rulestools__scan_file",
+      "mcp__mcp-proxy__rulestools__scan_tree",
+      "Bash(ls:*)",
+      "Bash(git -C D:/REPO/PIPER/PiperWorkbench status)"
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+// PiperWorkbench main UI definition
+
+import { Button, VerticalBox, HorizontalBox, ListView, StandardListViewItem } from "std-widgets.slint";
+import { Theme } from "globals/theme.slint";
+import { Sizes } from "state/sizes.slint";
+
+/// Main application window — hosts sidebar, waveform view, and parameter controls
+export component AppWindow inherits Window {
+    preferred-width: Sizes.window-width;
+    preferred-height: Sizes.window-height;
+    in property <string> title: "PiperWorkbench";
+
+    VerticalBox {
+        // Menu bar placeholder
+        HorizontalBox {
+            height: Sizes.menu-height;
+            Text { text: "File  Edit  View  Help"; }
+        }
+
+        // Toolbar
+        HorizontalBox {
+            height: Sizes.toolbar-height;
+            Button { text: "▶ Play"; }
+            Button { text: "⏹ Stop"; }
+            Button { text: "● Record"; }
+            Text { text: "Sample Rate: 22050Hz | Duration: 0:00"; }
+        }
+
+        // Main content area
+        HorizontalBox {
+            // Left panel: Project browser
+            VerticalBox {
+                width: Sizes.sidebar-width;
+                Text { text: "Project Files"; font-weight: bold; }
+                Rectangle { background: Theme.bg-panel; }
+            }
+
+            // Center: Waveform viewer
+            VerticalBox {
+                Text { text: "Waveform View"; }
+                Rectangle { background: Theme.bg-waveform; }
+                Text { text: "Spectrum Analyzer"; }
+                Rectangle { background: Theme.bg-waveform; height: Sizes.spectrum-height; }
+            }
+
+            // Right panel: Parameters
+            VerticalBox {
+                width: Sizes.params-width;
+                Text { text: "Voice Parameters"; font-weight: bold; }
+                Rectangle { background: Theme.bg-panel; }
+                Text { text: "Presets"; font-weight: bold; }
+                Rectangle { background: Theme.bg-panel; }
+            }
+        }
+
+        // Status bar
+        HorizontalBox {
+            height: Sizes.status-bar-height;
+            Text { text: "Status: Ready | Phase: Init"; }
+        }
+    }
+}
