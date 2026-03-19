@@ -1,0 +1,6 @@
+[2m2026-03-19T11:29:27.139944Z[0m [32m INFO[0m [2mmcp_proxy[0m[2m:[0m starting MCP multiplexer
+[2m2026-03-19T11:29:27.139963Z[0m [32m INFO[0m [2mmcp_proxy[0m[2m:[0m using config file [3mconfig[0m[2m=[0m"D:/REPO/RUSTPROJECTS/MCP/mcp-proxy/mcp-servers.json"
+[2m2026-03-19T11:29:27.140153Z[0m [32m INFO[0m [2mmcp_proxy::adapter[0m[2m:[0m loading servers from config [3mcount[0m[2m=[0m3
+[2m2026-03-19T11:29:27.152736Z[0m [32m INFO[0m [2mmcp_proxy::adapter[0m[2m:[0m server loaded and initialized [3mserver[0m[2m=[0mgui-mcp
+[2m2026-03-19T11:29:28.129068Z[0m [32m INFO[0m [2mmcp_proxy::adapter[0m[2m:[0m server loaded and initialized [3mserver[0m[2m=[0mrules
+[2m2026-03-19T11:29:28.897294Z[0m [32m INFO[0m [2mmcp_proxy::adapter[0m[2m:[0m server loaded and initialized [3mserver[0m[2m=[0mrulestools

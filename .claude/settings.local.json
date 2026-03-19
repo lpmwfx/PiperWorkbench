@@ -8,7 +8,8 @@
       "mcp__mcp-proxy__rulestools__scan_file",
       "mcp__mcp-proxy__rulestools__scan_tree",
       "Bash(ls:*)",
-      "Bash(git -C D:/REPO/PIPER/PiperWorkbench status)"
+      "Bash(git -C D:/REPO/PIPER/PiperWorkbench status)",
+      "Bash(gh repo:*)"
     ]
   }
 }
